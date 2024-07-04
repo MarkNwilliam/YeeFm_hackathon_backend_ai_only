@@ -8,8 +8,8 @@ from transformers import AutoTokenizer, M2M100ForConditionalGeneration, pipeline
 from flask_cors import CORS
 
 app = Flask(__name__)
-#CORS(app, resources={r"/*": {"origins": "http://localhost:3001"}})
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3001", "https://yeefm.com", "https://www.yeefm.com"]}})
+
+CORS(app, resources={r"/*": {"origins": [ "https://yeefm.com", "https://www.yeefm.com"]}})
 
 base_dir = "./data"  # Ensure this points to your ebook data directory
 audio_files_dir = "./audio_files"  # Directory where synthesized audio files are stored
@@ -18,8 +18,8 @@ audio_files_dir = "./audio_files"  # Directory where synthesized audio files are
 os.makedirs(audio_files_dir, exist_ok=True)
 
 # Load translation model and tokenizer once at startup
-translation_model = M2M100ForConditionalGeneration.from_pretrained("facebook/nllb-200-distilled-600M", torch_dtype=torch.float16).to("cuda").eval()
-translation_tokenizer = AutoTokenizer.from_pretrained("facebook/nllb-200-distilled-600M")
+translation_model = M2M100ForConditionalGeneration.from_pretrained("private-tt", torch_dtype=torch.float16).to("cuda").eval()
+translation_tokenizer = AutoTokenizer.from_pretrained("private-tt")
 
 def translate_long_text(long_text, max_chunk_length, translator, max_length):
     chunks = [long_text[i:i + max_chunk_length] for i in range(0, len(long_text), max_chunk_length)]
