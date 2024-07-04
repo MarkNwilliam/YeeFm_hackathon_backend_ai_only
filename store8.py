@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 vdb = chromadb.PersistentClient(path="./ebooks_vector")
 
 # MongoDB connection string
-mongoURI = "mongodb+srv://yeeplatform:yeeplatform2023@cluster0.libeaoy.mongodb.net/yeeplatformDatabase?retryWrites=true&w=majority"
+mongoURI = ""
 
 # Connect to MongoDB
 client = MongoClient(mongoURI)
