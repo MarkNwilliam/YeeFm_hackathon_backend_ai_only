@@ -24,7 +24,13 @@ YeeFM is a revolutionary AI-powered ebook and audiobook streaming platform that 
 
 ## Other Repositories
 
-- **Private Repositories:** We have several private repositories due to the sensitive business value they hold. Permissions for access can be requested by contacting us through the provided channels below.
+### Frontend
+- [Frontend Repository](https://github.com/MarkNwilliam/yeeplatform): Contains the frontend codebase for Yee FM.
+
+### Backend
+- [Backend Repository](https://github.com/MarkNwilliam/yeeplatformbackend): Contains the backend codebase for Yee FM.
+
+  - **Private Repositories:** We have several private repositories due to the sensitive business value they hold. Permission for access can be requested by contacting us through the provided channels below.
 
 ## My Contacts
 
