@@ -6,6 +6,10 @@
 
 YeeFM is a revolutionary AI-powered ebook and audiobook streaming platform that offers a seamless experience for discovering, reading, and listening to a vast library of over 150,000 ebooks and 30,000 audiobooks. Our platform supports multiple languages including English, French, Spanish, Swahili, and Arabic, making knowledge accessible globally. With integrated AI features, YeeFM enhances learning through interactive notes and presentations that simplify complex concepts.
 
+## Key features in this repo
+Ai chat bot and indexing of each ebook each ebook is a collection in a chroma database
+text to speech system  and translation system
+
 ## Screenshots
 
 ### Web App
