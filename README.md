@@ -13,6 +13,10 @@ YeeFM is a revolutionary AI-powered ebook and audiobook streaming platform that 
 ### Run this
 gunicorn -b 0.0.0.0:5000 -w 4 app_v8:app --daemon
 
+### or
+
+nohup gunicorn -b 0.0.0.0:5000 -w 4 app_v8:app > server.log 2>&1 &
+
 ## Screenshots
 ### Web App
 
