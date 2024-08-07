@@ -10,8 +10,10 @@ YeeFM is a revolutionary AI-powered ebook and audiobook streaming platform that 
 - Ai chat bot and indexing of each ebook each ebook is a collection in a chroma database
 - text-to-speech system  and translation system
 
-## Screenshots
+### Run this
+gunicorn -b 0.0.0.0:5000 -w 4 app_v8:app --daemon
 
+## Screenshots
 ### Web App
 
 
